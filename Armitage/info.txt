@@ -1,0 +1,44 @@
+Used Armitage to find and execute series of exploits.
+
+Launched NMap instense scan to re-scan for vulnerabilities as 'import host' was not working
+
+Found the following exploits:
+
+Metasploitable2:
+  - vstfpd 
+    > FTP server for UNIX-like systems
+    > exploits a malicious backdoor from downloads
+  - distcc
+    > use security vulnerability from documents
+    > execute random commands on any OS
+  - Java RMI server
+    > through the configuration of the RMI Registry and services that allow loading classes from any remote (HTTP) URL
+  - unreal ircd
+    > backdoor exploit on Unreal IRCD download archive
+  - usermap script
+    > attack with a script with username that contains shell character without authentication
+    > maps usernames prior to authentication
+  - postgreSQL
+    > able to send commands to database
+    > discover password hases and read files
+    
+  Harvesting credentials
+    . opened shell via one of the exploits
+    . obtained password and shadow files from victim VM via cat /etc/passwd and cat/etc/shadow-
+    . saved the files into local Kali dir (attacker VM)
+    . used John the Ripper in Kali to unshadow the two files via unshadow /etc/passwd /etc/shadow- > /etc/pwd.db
+    . saved db into local dir
+    . cracked pwd.db files (with password hashes) via john /etc/pwd.db (use john -show /etc/pwd.db to show previously cracked PWs)
+    . obtained the following credentials in the following format:
+        USERNAME : PASSWORD
+      > postgres : postgres
+      > user     : user
+      > msfadmin : msfadmin
+      > service  : service
+      > klog     : 123456789
+      > sys      : batman
+    . tells us that most credentials have same username and password combination
+    . successful attempt at FTP login via postgres : postgres
+    
+    
+      
