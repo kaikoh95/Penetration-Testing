@@ -13,6 +13,7 @@ Cons
 - can be quite inaccurate thus
 - non-intuitive; small icons without much text for description, need many clicks to find the actual report
 - can be very slow with 'full and deep ultimate' mode
+- scan % does not update dynamically
 
 For Metasploitable2:
 
