@@ -6,7 +6,7 @@ Pros
 - shown in a very neat UI with host details nicely placed on right column
 - more accurate and faster than OpenVAS
 - shows family the plugin vulnerability belongs to
-
+- scan % updates dynamically
 
 Cons
 - costly
