@@ -1,0 +1,9 @@
+Used Nmap Scan for detection and prevention of future attacks.
+
+Types of port scan performed:
+> -sN (NULL)
+> -sS (TCP SYN)
+> -sY (SCTP INIT)
+> -sO (IP protocol)
+
+Mitigating Port Scans using Snort
