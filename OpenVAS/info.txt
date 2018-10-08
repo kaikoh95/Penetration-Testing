@@ -1,1 +1,34 @@
+Here, I used OpenVAS to scan for vulnerabilities.
 
+Pros
+- free
+- simple and straightforward UI
+- open source
+- able to perform deeper scans than Nessus
+- shows port and location
+
+Cons
+- poorly-designed UI
+- false positive exploits mixed into actual ones
+- can be quite inaccurate thus
+- non-intuitive; small icons without much text for description, need many clicks to find the actual report
+- can be very slow with 'full and deep ultimate' mode
+
+For Metasploitable2:
+
+- Twiki XSS
+- rexecd Service
+- Java RMI Server Insecure Default Configuration
+- Distributed Ruby Multiple Remote Code Execution
+- Ingreslock backdoor possibility
+- DistCC Remote Code Execution
+- MySQL weak password
+- PostgreSQL weak password
+
+  > Full and Fast
+    - took 13 minutes
+    - 337 vulnerabilities (22 high, around 46 medium severity levels)
+    
+  > Full and Very Deep Ultimate
+    - took 29 minutes
+    - similar number of vulnerabilities
