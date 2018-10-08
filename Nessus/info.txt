@@ -4,15 +4,23 @@ Pros
 - sorted from highest severity level automatically
 - gives detailed description of the vulnerability
 - shown in a very neat UI with host details nicely placed on right column
-- faster than OpenVAS
-- more accurate
+- more accurate and faster than OpenVAS
+- shows family the plugin vulnerability belongs to
+
 
 Cons
 - costly
 - window size not scalable
-- shows family the plugin vulnerability belongs to
+- may miss out some vulnerabilities due to lack of 'deep' scan option
 
 For Metasploitable2:
+
+> Debain OpenSSH/OpenSSL Package Random Number Generator Weakness
+> rexecd Service Detection
+> Rogue Shell Backdoor Detection
+> Unix Operating System Unsupported Version Detection
+> VNC Server 'password' Password
+
 - the Advanced scan took 4 minutes
 - identified 99 vulnerabilities (5 critical, 2 high, 20 medium, 7 low, and some info levels)
 - out of 113 info severity levels, most just give additional information on services running, traceroute results, OS info etc
