@@ -21,7 +21,7 @@ For Metasploitable2:
 > Unix Operating System Unsupported Version Detection
 > VNC Server 'password' Password
 
-- the Advanced scan took 4 minutes
-- identified 99 vulnerabilities (5 critical, 2 high, 20 medium, 7 low, and some info levels)
-- out of 113 info severity levels, most just give additional information on services running, traceroute results, OS info etc
+  - the Advanced scan took 4 minutes
+  - identified 99 vulnerabilities (5 critical, 2 high, 20 medium, 7 low, and some info levels)
+  - out of 113 info severity levels, most just give additional information on services running, traceroute results, OS info etc
 
