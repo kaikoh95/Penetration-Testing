@@ -8,7 +8,7 @@ This repository is designed to help understand:
 Here I used two vulnerability scanners, Nessus and OpenVAS, to scan for vulnerabilities in Metasploitable2 and
 Windows XP SP2 virtual machines. 
 
-* Win XP SP2 may not have been pen-tested at this time of committing *
+* Win XP SP2 may not have been pen-tested at this time of committing 
 
 Afterwards, I used the discovered vulnerabilities to exploit those VMs with:
 - publicly available exploits in Metasploit
