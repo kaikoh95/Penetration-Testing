@@ -1,0 +1,14 @@
+Mitigating scans/exploits with Snort
+
+Modified snort config file on Kali
+  - uncomment line with preprocessor sfportscan: proto ... sense_level { high } ...
+Created local.rules and added 2 rules to detect port scanning
+Run snort with custom settings
+  - snort -c /etc/snort/snort.conf -A console -k none -d
+
+Metasploitable2:
+Results seen post-snort config for the following port scans
+  - SYN
+  - NULL
+  - TCP NUL
+  - SCTP INIT
