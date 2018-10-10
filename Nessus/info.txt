@@ -15,7 +15,7 @@ Cons
 
 For Metasploitable2:
 
-> Debain OpenSSH/OpenSSL Package Random Number Generator Weakness
+> Debian OpenSSH/OpenSSL Package Random Number Generator Weakness
 > rexecd Service Detection
 > Rogue Shell Backdoor Detection
 > Unix Operating System Unsupported Version Detection
